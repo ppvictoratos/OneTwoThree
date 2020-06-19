@@ -9,30 +9,57 @@
 import SwiftUI
 
 enum gameMode {
-    case addition
-    case subtraction
-    case multiplication
-    case division
+    case addition      //0
+    case subtraction   //1
+    case multiplication//2
+    case division      //3
 }
 
-//or should i have a state?
-//public @State var gameMode: Int
+//Should NavLink to the game screen dependent on the game mode selected
+var profileButton: some View {
+    Button(action: {print(gameMode.addition)}){
+        Text("hey")
+    }
+}
+
+//have a global state that changes the game mode
+//for now have each button mutate the state
 
 struct MainMenu: View {
+    @State var gameModeRef: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack{
+                profileButton
+                profileButton
+            }
+            HStack{
+                profileButton
+                profileButton
+            }
+            Button(action: {print(gameMode.addition)}){
+                Text("Go")
+            }
+        }
     }
 }
 
 struct MainMenu_Previews: PreviewProvider {
     static var previews: some View {
-        MainMenu()
+        MainMenu(gameModeRef: 0)
     }
 }
 
 //Create a Game View that has:
-//a mode selector
+
+//a mode selector.. sliders?
+//what looks the best?
 //a difficulty selector
+//a start button
 //starts out as a whiteboard, with all operators shown
+
+// BY SUNDAY ^^^^^^
+// AFTER SUNDAY vvvvv
 //a background that changes color based upon mode & generates more
     //operator signs dependent on how difficult
