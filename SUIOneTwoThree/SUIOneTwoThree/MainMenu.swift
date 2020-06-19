@@ -15,13 +15,6 @@ enum gameMode {
     case division      //3
 }
 
-//Should NavLink to the game screen dependent on the game mode selected
-var profileButton: some View {
-    Button(action: {print(gameMode.addition)}){
-        Text("hey")
-    }
-}
-
 //have a global state that changes the game mode
 //for now have each button mutate the state
 
@@ -29,21 +22,36 @@ struct MainMenu: View {
     @State var gameModeRef: Int
     
     var body: some View {
-        VStack{
-            HStack{
-                profileButton
-                profileButton
+            NavigationView{
+                VStack{
+                    Text("OneTwoThree").bold()
+                    VStack {
+                    HStack{
+                        Button(action: {self.gameModeRef = 0}){
+                            Text("Addition")
+                        }
+                        Button(action: {self.gameModeRef = 1}){
+                            Text("Subtraction")
+                        }
+                    }
+                    HStack{
+                        Button(action: {self.gameModeRef = 2}){
+                            Text("Multiplication")
+                        }
+                        Button(action: {self.gameModeRef = 3}){
+                            Text("Division")
+                        }
+                    }
+                }
+                    NavigationLink(destination: GameView()){
+                         Text("Go")
+                    }
+
+                    }
+                }
+ 
             }
-            HStack{
-                profileButton
-                profileButton
-            }
-            Button(action: {print(gameMode.addition)}){
-                Text("Go")
-            }
-        }
     }
-}
 
 struct MainMenu_Previews: PreviewProvider {
     static var previews: some View {
