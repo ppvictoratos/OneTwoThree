@@ -22,35 +22,44 @@ struct MainMenu: View {
     @State var gameModeRef: Int
     
     var body: some View {
-            NavigationView{
-                VStack{
-                    Text("OneTwoThree").bold()
+        NavigationView{
+        VStack{
+                    Spacer(minLength: 30)
+                    Text("OneTwoThree").font(.largeTitle).bold()
+                    Spacer(minLength: 30)
                     VStack {
                     HStack{
+                        Spacer()
                         Button(action: {self.gameModeRef = 0}){
-                            Text("Addition")
+                            Text("+").font(.largeTitle)
                         }
+                        Spacer()
                         Button(action: {self.gameModeRef = 1}){
-                            Text("Subtraction")
+                            Text("-").font(.largeTitle)
                         }
+                        Spacer()
                     }
+                        Spacer(minLength: 15)
                     HStack{
+                        Spacer()
                         Button(action: {self.gameModeRef = 2}){
-                            Text("Multiplication")
+                            Text("*").font(.largeTitle)
                         }
+                        Spacer()
                         Button(action: {self.gameModeRef = 3}){
-                            Text("Division")
+                            Text("/").font(.largeTitle)
                         }
+                        Spacer()
                     }
                 }
-                    NavigationLink(destination: GameView(gameModeRef: self.gameModeRef)){
-                         Text("Go")
+                    Spacer(minLength: 30)
+                        NavigationLink(destination: GameView(gameModeRef: self.gameModeRef)){
+                             Text("Go")
+                        }
+                    Spacer(minLength: 60)
                     }
-
-                    }
-                }
- 
             }
+    }
     }
 
 struct MainMenu_Previews: PreviewProvider {

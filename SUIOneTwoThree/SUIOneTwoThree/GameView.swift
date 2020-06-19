@@ -27,7 +27,6 @@ func gameModeToText(modeRef: Int) -> String {
         gameModeName = "Division"
     }
     
-    
     return gameModeName
 }
 
