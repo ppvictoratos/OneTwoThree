@@ -30,11 +30,14 @@ func gameModeToText(modeRef: Int) -> String {
     return gameModeName
 }
 
+//create a view for the touch model
+
 struct GameView: View {
     @State var gameModeRef: Int
     
     var body: some View {
-        Text(gameModeToText(modeRef: gameModeRef))
+        Text(gameModeToText(modeRef: gameModeRef)).bold()
+        
     }
 }
 
