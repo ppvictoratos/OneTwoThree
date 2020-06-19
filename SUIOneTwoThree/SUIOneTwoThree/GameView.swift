@@ -8,14 +8,39 @@
 
 import SwiftUI
 
+func gameModeToText(modeRef: Int) -> String {
+    var gameModeName: String = ""
+    
+    if modeRef == 0 {
+        gameModeName = "Addition"
+    }
+    
+    if modeRef == 1 {
+        gameModeName = "Subtraction"
+    }
+    
+    if modeRef == 2 {
+        gameModeName = "Multiplication"
+    }
+    
+    if modeRef == 3 {
+        gameModeName = "Division"
+    }
+    
+    
+    return gameModeName
+}
+
 struct GameView: View {
+    @State var gameModeRef: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(gameModeToText(modeRef: gameModeRef))
     }
 }
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView()
+        GameView(gameModeRef: 0)
     }
 }

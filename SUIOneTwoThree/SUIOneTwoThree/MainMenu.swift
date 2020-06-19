@@ -43,7 +43,7 @@ struct MainMenu: View {
                         }
                     }
                 }
-                    NavigationLink(destination: GameView()){
+                    NavigationLink(destination: GameView(gameModeRef: self.gameModeRef)){
                          Text("Go")
                     }
 
