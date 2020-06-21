@@ -36,8 +36,28 @@ struct GameView: View {
     @State var gameModeRef: Int
     
     var body: some View {
+        
+        //todo: put this title up top in big font
         Text(gameModeToText(modeRef: gameModeRef)).bold()
         
+        //add: the necessary labels
+        //score label
+        
+        //time label
+        
+        //num 1 label
+        
+        //operator label
+        
+        //num 2 label
+        
+        //Divider
+        
+        //keep space for the view that user will write in
+        
+        //Clear button
+        
+        //Enter button
     }
 }
 
