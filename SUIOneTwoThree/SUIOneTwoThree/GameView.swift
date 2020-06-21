@@ -37,27 +37,31 @@ struct GameView: View {
     
     var body: some View {
         
+        VStack {
         //todo: put this title up top in big font
-        Text(gameModeToText(modeRef: gameModeRef)).bold()
-        
-        //add: the necessary labels
-        //score label
-        
-        //time label
-        
-        //num 1 label
-        
-        //operator label
-        
-        //num 2 label
-        
-        //Divider
-        
+        Text(gameModeToText(modeRef: gameModeRef)).bold().font(.largeTitle)
+            
+            HStack {
+                Text("Score").font(.caption)
+                Text("  |  ")
+                Text("Timer").font(.caption)
+            }
+            
+        Spacer(minLength: 20)
+            
+        HStack{
+            Text("Num 1")
+            Text("•")
+            Text("Num 2")
+            }
+            
+        UserInputView()
+            
+        Spacer()
+        }
         //keep space for the view that user will write in
         
         //Clear button
-        
-        //Enter button
     }
 }
 

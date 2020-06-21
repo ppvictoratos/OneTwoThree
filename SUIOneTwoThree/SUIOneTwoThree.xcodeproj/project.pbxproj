@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F600154624A000B300802DDF /* UserInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F600154524A000B200802DDF /* UserInputView.swift */; };
 		F6047C29249D3E72003C5B5D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6047C28249D3E72003C5B5D /* GameView.swift */; };
 		F6EF14D2249A700E00F6D684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EF14D1249A700E00F6D684 /* AppDelegate.swift */; };
 		F6EF14D4249A700E00F6D684 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EF14D3249A700E00F6D684 /* SceneDelegate.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F600154524A000B200802DDF /* UserInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputView.swift; sourceTree = "<group>"; };
 		F6047C28249D3E72003C5B5D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		F6EF14CE249A700E00F6D684 /* SUIOneTwoThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUIOneTwoThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EF14D1249A700E00F6D684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				F6EF14D5249A700E00F6D684 /* ContentView.swift */,
 				F6EF14F3249A763600F6D684 /* MainMenu.swift */,
 				F6047C28249D3E72003C5B5D /* GameView.swift */,
+				F600154524A000B200802DDF /* UserInputView.swift */,
 				F6EF14D7249A701000F6D684 /* Assets.xcassets */,
 				F6EF14DC249A701000F6D684 /* LaunchScreen.storyboard */,
 				F6EF14DF249A701000F6D684 /* Info.plist */,
@@ -218,6 +221,7 @@
 				F6EF14D4249A700E00F6D684 /* SceneDelegate.swift in Sources */,
 				F6EF14D6249A700E00F6D684 /* ContentView.swift in Sources */,
 				F6EF14F4249A763600F6D684 /* MainMenu.swift in Sources */,
+				F600154624A000B300802DDF /* UserInputView.swift in Sources */,
 				F6047C29249D3E72003C5B5D /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
