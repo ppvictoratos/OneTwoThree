@@ -20,7 +20,7 @@ struct UserInputView: View {
                     print("yo")
                 }){
                     Text("Clear")
-                }
+                }.accentColor(.black)
                 
                 Spacer()
                 
@@ -28,7 +28,7 @@ struct UserInputView: View {
                     print("yo")
                 }){
                     Text("Enter")
-                }
+                }.accentColor(.black)
                 
                 Spacer()
             }

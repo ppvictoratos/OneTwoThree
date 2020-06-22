@@ -8,38 +8,42 @@
 
 import SwiftUI
 
-func gameModeToText(modeRef: Int) -> String {
-    var gameModeName: String = ""
+func gameModeToText(modeRef: gameMode) -> [String] {
+    var gameModeStatus: [String] = ["q","p"]
     
-    if modeRef == 0 {
-        gameModeName = "Addition"
+    if modeRef == .addition {
+        gameModeStatus[0] = "Addition"
+        gameModeStatus[1] = "+"
     }
     
-    if modeRef == 1 {
-        gameModeName = "Subtraction"
+    if modeRef == .subtraction {
+        gameModeStatus[0] = "Subtraction"
+        gameModeStatus[1] = "-"
     }
     
-    if modeRef == 2 {
-        gameModeName = "Multiplication"
+    if modeRef == .multiplication {
+        gameModeStatus[0] = "Multiplication"
+        gameModeStatus[1] = "×"
     }
     
-    if modeRef == 3 {
-        gameModeName = "Division"
+    if modeRef == .division {
+        gameModeStatus[0] = "Division"
+        gameModeStatus[1] = "÷"
     }
     
-    return gameModeName
+    return gameModeStatus
 }
 
 //create a view for the touch model
 
 struct GameView: View {
-    @State var gameModeRef: Int
+    @State var gameModeRef: gameMode
     
     var body: some View {
         
         VStack {
         //todo: put this title up top in big font
-        Text(gameModeToText(modeRef: gameModeRef)).bold().font(.largeTitle)
+            Text(gameModeToText(modeRef: gameModeRef)[0]).bold().font(.largeTitle)
             
             HStack {
                 Text("Score").font(.caption)
@@ -51,7 +55,7 @@ struct GameView: View {
             
         HStack{
             Text("Num 1")
-            Text("•")
+            Text(gameModeToText(modeRef: gameModeRef)[1])
             Text("Num 2")
             }
             
@@ -59,14 +63,11 @@ struct GameView: View {
             
         Spacer()
         }
-        //keep space for the view that user will write in
-        
-        //Clear button
     }
 }
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView(gameModeRef: 0)
+        GameView(gameModeRef: gameMode.addition)
     }
 }

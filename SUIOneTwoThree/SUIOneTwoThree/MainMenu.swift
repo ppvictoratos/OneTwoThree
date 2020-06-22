@@ -19,10 +19,12 @@ enum gameMode {
 //for now have each button mutate the state
 
 struct MainMenu: View {
-    @State var gameModeRef: Int
+    @State var gameModeRef: gameMode
     
     var body: some View {
         NavigationView{
+        ZStack{
+        
         VStack{
                     Spacer(minLength: 30)
                     Text("OneTwoThree").font(.largeTitle).bold()
@@ -30,41 +32,42 @@ struct MainMenu: View {
                     VStack {
                     HStack{
                         Spacer()
-                        Button(action: {self.gameModeRef = 0}){
-                            Text("+").font(.largeTitle)
+                        Button(action: {self.gameModeRef = gameMode.addition}){
+                            Text("+").font(.largeTitle).accentColor(.white)
                         }
                         Spacer()
-                        Button(action: {self.gameModeRef = 1}){
-                            Text("-").font(.largeTitle)
+                        Button(action: {self.gameModeRef = gameMode.subtraction}){
+                            Text("-").font(.largeTitle).accentColor(.white)
                         }
                         Spacer()
                     }
                         Spacer(minLength: 15)
                     HStack{
                         Spacer()
-                        Button(action: {self.gameModeRef = 2}){
-                            Text("*").font(.largeTitle)
+                        Button(action: {self.gameModeRef = gameMode.multiplication}){
+                            Text("×").font(.largeTitle).accentColor(.white)
                         }
                         Spacer()
-                        Button(action: {self.gameModeRef = 3}){
-                            Text("/").font(.largeTitle)
+                        Button(action: {self.gameModeRef = gameMode.division}){
+                            Text("÷").font(.largeTitle).accentColor(.white)
                         }
                         Spacer()
                     }
                 }
                     Spacer(minLength: 30)
-                        NavigationLink(destination: GameView(gameModeRef: self.gameModeRef)){
-                             Text("Go")
+                        NavigationLink(destination: GameView(gameModeRef: gameModeRef)){
+                            Text("Go").accentColor(.white)
                         }
                     Spacer(minLength: 60)
                     }
             }
     }
     }
+    }
 
 struct MainMenu_Previews: PreviewProvider {
     static var previews: some View {
-        MainMenu(gameModeRef: 0)
+        MainMenu(gameModeRef: gameMode.addition)
     }
 }
 
