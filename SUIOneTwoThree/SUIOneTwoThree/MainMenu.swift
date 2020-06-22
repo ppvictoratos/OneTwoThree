@@ -56,7 +56,7 @@ struct MainMenu: View {
                         Spacer()
                 }
                     Spacer(minLength: 30)
-                        NavigationLink(destination: GameView(gameModeRef: gameModeRef)){
+                        NavigationLink(destination: GameView()){
                             Text("Go").accentColor(.white)
                         }
                     Spacer(minLength: 60)
