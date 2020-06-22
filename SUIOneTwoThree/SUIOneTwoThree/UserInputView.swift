@@ -11,7 +11,7 @@ import SwiftUI
 struct UserInputView: View {
     var body: some View {
         VStack{
-            Rectangle()
+            Rectangle().foregroundColor(.white)
             
             HStack {
                 Spacer()
@@ -20,7 +20,7 @@ struct UserInputView: View {
                     print("yo")
                 }){
                     Text("Clear")
-                }.accentColor(.black)
+                }.accentColor(.white)
                 
                 Spacer()
                 
@@ -28,7 +28,7 @@ struct UserInputView: View {
                     print("yo")
                 }){
                     Text("Enter")
-                }.accentColor(.black)
+                }.accentColor(.white)
                 
                 Spacer()
             }

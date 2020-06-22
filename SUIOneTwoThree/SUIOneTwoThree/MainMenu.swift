@@ -24,12 +24,12 @@ struct MainMenu: View {
     var body: some View {
         NavigationView{
         ZStack{
-        
+            Image("green").resizable().edgesIgnoringSafeArea(.all)
         VStack{
-                    Spacer(minLength: 30)
-                    Text("OneTwoThree").font(.largeTitle).bold()
+            Text("OneTwoThree").font(.largeTitle).bold().foregroundColor(.white)
                     Spacer(minLength: 30)
                     VStack {
+                        Spacer()
                     HStack{
                         Spacer()
                         Button(action: {self.gameModeRef = gameMode.addition}){
@@ -53,6 +53,7 @@ struct MainMenu: View {
                         }
                         Spacer()
                     }
+                        Spacer()
                 }
                     Spacer(minLength: 30)
                         NavigationLink(destination: GameView(gameModeRef: gameModeRef)){

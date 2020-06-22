@@ -41,28 +41,31 @@ struct GameView: View {
     
     var body: some View {
         
+        ZStack{
+            Image("green").resizable().edgesIgnoringSafeArea(.all)
         VStack {
         //todo: put this title up top in big font
-            Text(gameModeToText(modeRef: gameModeRef)[0]).bold().font(.largeTitle)
+            Text(gameModeToText(modeRef: gameModeRef)[0]).bold().font(.largeTitle).foregroundColor(.white)
             
             HStack {
-                Text("Score").font(.caption)
-                Text("  |  ")
-                Text("Timer").font(.caption)
+                Text("Score").font(.caption).foregroundColor(.white)
+                Text("  |  ").foregroundColor(.white)
+                Text("Timer").font(.caption).foregroundColor(.white)
             }
             
         Spacer(minLength: 20)
             
         HStack{
-            Text("Num 1")
-            Text(gameModeToText(modeRef: gameModeRef)[1])
-            Text("Num 2")
+            Text("Num 1").foregroundColor(.white)
+            Text(gameModeToText(modeRef: gameModeRef)[1]).foregroundColor(.white)
+            Text("Num 2").foregroundColor(.white)
             }
             
-        UserInputView()
+            UserInputView()
             
         Spacer()
         }
+    }
     }
 }
 
