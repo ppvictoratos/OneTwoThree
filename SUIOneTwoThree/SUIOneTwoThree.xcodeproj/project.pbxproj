@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F600154624A000B300802DDF /* UserInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F600154524A000B200802DDF /* UserInputView.swift */; };
 		F68D5CC924A1454100076194 /* ColorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D5CC124A1454000076194 /* ColorEntry.swift */; };
 		F68D5CCA24A1454100076194 /* DrawingPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D5CC224A1454000076194 /* DrawingPad.swift */; };
 		F68D5CCB24A1454100076194 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D5CC324A1454100076194 /* ColorPicker.swift */; };
 		F68D5CCC24A1454100076194 /* ColorsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D5CC424A1454100076194 /* ColorsProvider.swift */; };
 		F68D5CCD24A1454100076194 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D5CC524A1454100076194 /* GameView.swift */; };
 		F68D5CCE24A1454100076194 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D5CC624A1454100076194 /* Drawing.swift */; };
-		F68D5CCF24A1454100076194 /* DifficultyModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D5CC724A1454100076194 /* DifficultyModeView.swift */; };
 		F68D5CD024A1454100076194 /* Chalkduster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F68D5CC824A1454100076194 /* Chalkduster.ttf */; };
 		F6EF14D2249A700E00F6D684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EF14D1249A700E00F6D684 /* AppDelegate.swift */; };
 		F6EF14D4249A700E00F6D684 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EF14D3249A700E00F6D684 /* SceneDelegate.swift */; };
@@ -23,7 +21,6 @@
 		F6EF14DB249A701000F6D684 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EF14DA249A701000F6D684 /* Preview Assets.xcassets */; };
 		F6EF14DE249A701000F6D684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EF14DC249A701000F6D684 /* LaunchScreen.storyboard */; };
 		F6EF14E9249A701000F6D684 /* SUIOneTwoThreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EF14E8249A701000F6D684 /* SUIOneTwoThreeTests.swift */; };
-		F6EF14F4249A763600F6D684 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EF14F3249A763600F6D684 /* MainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,14 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F600154524A000B200802DDF /* UserInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputView.swift; sourceTree = "<group>"; };
 		F68D5CC124A1454000076194 /* ColorEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorEntry.swift; path = "../../../../../Downloads/OneTwoThreeSwiftUI 2/OneTwoThreeSwiftUI/ColorEntry.swift"; sourceTree = "<group>"; };
 		F68D5CC224A1454000076194 /* DrawingPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingPad.swift; path = "../../../../../Downloads/OneTwoThreeSwiftUI 2/OneTwoThreeSwiftUI/DrawingPad.swift"; sourceTree = "<group>"; };
 		F68D5CC324A1454100076194 /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPicker.swift; path = "../../../../../Downloads/OneTwoThreeSwiftUI 2/OneTwoThreeSwiftUI/ColorPicker.swift"; sourceTree = "<group>"; };
 		F68D5CC424A1454100076194 /* ColorsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorsProvider.swift; path = "../../../../../Downloads/OneTwoThreeSwiftUI 2/OneTwoThreeSwiftUI/ColorsProvider.swift"; sourceTree = "<group>"; };
 		F68D5CC524A1454100076194 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameView.swift; path = "../../../../../Downloads/OneTwoThreeSwiftUI 2/OneTwoThreeSwiftUI/GameView.swift"; sourceTree = "<group>"; };
 		F68D5CC624A1454100076194 /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Drawing.swift; path = "../../../../../Downloads/OneTwoThreeSwiftUI 2/OneTwoThreeSwiftUI/Drawing.swift"; sourceTree = "<group>"; };
-		F68D5CC724A1454100076194 /* DifficultyModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DifficultyModeView.swift; path = "../../../../../Downloads/OneTwoThreeSwiftUI 2/OneTwoThreeSwiftUI/DifficultyModeView.swift"; sourceTree = "<group>"; };
 		F68D5CC824A1454100076194 /* Chalkduster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Chalkduster.ttf; path = "../../../../../Downloads/OneTwoThreeSwiftUI 2/OneTwoThreeSwiftUI/Chalkduster.ttf"; sourceTree = "<group>"; };
 		F6EF14CE249A700E00F6D684 /* SUIOneTwoThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUIOneTwoThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EF14D1249A700E00F6D684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +52,6 @@
 		F6EF14E4249A701000F6D684 /* SUIOneTwoThreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SUIOneTwoThreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EF14E8249A701000F6D684 /* SUIOneTwoThreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIOneTwoThreeTests.swift; sourceTree = "<group>"; };
 		F6EF14EA249A701000F6D684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6EF14F3249A763600F6D684 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +97,10 @@
 				F6EF14D3249A700E00F6D684 /* SceneDelegate.swift */,
 				F6EF14D5249A700E00F6D684 /* ContentView.swift */,
 				F68D5CC524A1454100076194 /* GameView.swift */,
-				F6EF14F3249A763600F6D684 /* MainMenu.swift */,
-				F600154524A000B200802DDF /* UserInputView.swift */,
 				F68D5CC824A1454100076194 /* Chalkduster.ttf */,
 				F68D5CC124A1454000076194 /* ColorEntry.swift */,
 				F68D5CC324A1454100076194 /* ColorPicker.swift */,
 				F68D5CC424A1454100076194 /* ColorsProvider.swift */,
-				F68D5CC724A1454100076194 /* DifficultyModeView.swift */,
 				F68D5CC624A1454100076194 /* Drawing.swift */,
 				F68D5CC224A1454000076194 /* DrawingPad.swift */,
 				F6EF14D7249A701000F6D684 /* Assets.xcassets */,
@@ -243,14 +234,11 @@
 				F6EF14D4249A700E00F6D684 /* SceneDelegate.swift in Sources */,
 				F68D5CCC24A1454100076194 /* ColorsProvider.swift in Sources */,
 				F6EF14D6249A700E00F6D684 /* ContentView.swift in Sources */,
-				F6EF14F4249A763600F6D684 /* MainMenu.swift in Sources */,
 				F68D5CCD24A1454100076194 /* GameView.swift in Sources */,
 				F68D5CCA24A1454100076194 /* DrawingPad.swift in Sources */,
 				F68D5CCB24A1454100076194 /* ColorPicker.swift in Sources */,
 				F68D5CCE24A1454100076194 /* Drawing.swift in Sources */,
 				F68D5CC924A1454100076194 /* ColorEntry.swift in Sources */,
-				F600154624A000B300802DDF /* UserInputView.swift in Sources */,
-				F68D5CCF24A1454100076194 /* DifficultyModeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
