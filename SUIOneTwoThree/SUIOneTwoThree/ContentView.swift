@@ -41,13 +41,14 @@ struct ContentView: View {
                             Text("+").font(Font.custom("Chalkduster", size: 80))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.bold)
-                        }
+                        }.buttonStyle(MyButtonStyle())
+
                         Spacer()
                         Button(action: {self.gameModeRef = gameMode.subtraction}){
                             Text("-").font(Font.custom("Chalkduster", size: 80))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.bold)
-                        }
+                        }.buttonStyle(MyButtonStyle())
                         Spacer()
                     }
                         Spacer(minLength: 15)
@@ -57,13 +58,13 @@ struct ContentView: View {
                             Text("x").font(Font.custom("Chalkduster", size: 80))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.bold)
-                        }
+                        }.buttonStyle(MyButtonStyle())
                         Spacer()
                         Button(action: {self.gameModeRef = gameMode.division}){
                             Text("÷").font(Font.custom("Chalkduster", size: 80))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.bold)
-                        }
+                        }.buttonStyle(MyButtonStyle())
                         Spacer()
                     }
                         Spacer()
@@ -71,15 +72,15 @@ struct ContentView: View {
                             Spacer()
                             Button("Easy"){
                                 difficultyRef = difficulty.easy
-                            }.font(Font.custom("Chalkduster", size: 20)).foregroundColor(.white)
+                            }.font(Font.custom("Chalkduster", size: 20)).foregroundColor(.white).buttonStyle(MyButtonStyle())
                             Spacer()
                             Button("Medium"){
                                 difficultyRef = difficulty.medium
-                            }.font(Font.custom("Chalkduster", size: 20)).foregroundColor(.white)
+                            }.font(Font.custom("Chalkduster", size: 20)).foregroundColor(.white).buttonStyle(MyButtonStyle())
                             Spacer()
                             Button("Hard"){
                                 difficultyRef = difficulty.hard
-                            }.font(Font.custom("Chalkduster", size: 20)).foregroundColor(.white)
+                            }.font(Font.custom("Chalkduster", size: 20)).foregroundColor(.white).buttonStyle(MyButtonStyle())
                             Spacer()
                         }
 
@@ -89,11 +90,12 @@ struct ContentView: View {
                             Text("Go").font(Font.custom("Chalkduster", size: 30))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.bold)
+                                .buttonStyle(MyButtonStyle())
                         }
                     Spacer(minLength: 60)
                     }
             }
-    }
+        }
     }
     
 }
@@ -102,4 +104,16 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(gameModeRef: gameMode.addition, difficultyRef: difficulty.easy)
     }
+}
+
+struct MyButtonStyle: ButtonStyle {
+
+  func makeBody(configuration: Self.Configuration) -> some View {
+    configuration.label
+      .padding()
+      .foregroundColor(.white)
+      .background(configuration.isPressed ? Color.green : Color.black)
+      .cornerRadius(8.0)
+  }
+
 }
