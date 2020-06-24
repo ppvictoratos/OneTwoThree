@@ -110,10 +110,8 @@ struct MyButtonStyle: ButtonStyle {
 
   func makeBody(configuration: Self.Configuration) -> some View {
     configuration.label
-      .padding()
-      .foregroundColor(.white)
-      .background(configuration.isPressed ? Color.green : Color.black)
+        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 3)
+        .background(configuration.isPressed ? Color.green : Color("Button"))
       .cornerRadius(8.0)
   }
-
 }
