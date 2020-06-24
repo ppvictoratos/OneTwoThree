@@ -91,7 +91,7 @@ struct ContentView: View {
                                 .foregroundColor(Color.white)
                                 .fontWeight(.bold)
                                 .buttonStyle(MyButtonStyle())
-                        }
+            }.navigationBarHidden(true)
                     Spacer(minLength: 60)
                     }
             }
