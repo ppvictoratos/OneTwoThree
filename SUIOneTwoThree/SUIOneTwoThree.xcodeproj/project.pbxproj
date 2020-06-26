@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F615BA5024A522D4003F9906 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615BA4F24A522D4003F9906 /* GameModel.swift */; };
+		F615BA5224A65AD8003F9906 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615BA5124A65AD8003F9906 /* UserProfile.swift */; };
 		F68D5CC924A1454100076194 /* ColorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D5CC124A1454000076194 /* ColorEntry.swift */; };
 		F68D5CCA24A1454100076194 /* DrawingPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D5CC224A1454000076194 /* DrawingPad.swift */; };
 		F68D5CCB24A1454100076194 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D5CC324A1454100076194 /* ColorPicker.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		F615BA4F24A522D4003F9906 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		F615BA5124A65AD8003F9906 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		F68D5CC124A1454000076194 /* ColorEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorEntry.swift; path = "../../../../../Downloads/OneTwoThreeSwiftUI 2/OneTwoThreeSwiftUI/ColorEntry.swift"; sourceTree = "<group>"; };
 		F68D5CC224A1454000076194 /* DrawingPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingPad.swift; path = "../../../../../Downloads/OneTwoThreeSwiftUI 2/OneTwoThreeSwiftUI/DrawingPad.swift"; sourceTree = "<group>"; };
 		F68D5CC324A1454100076194 /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPicker.swift; path = "../../../../../Downloads/OneTwoThreeSwiftUI 2/OneTwoThreeSwiftUI/ColorPicker.swift"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				F6EF14D5249A700E00F6D684 /* ContentView.swift */,
 				F68D5CC524A1454100076194 /* GameView.swift */,
 				F615BA4F24A522D4003F9906 /* GameModel.swift */,
+				F615BA5124A65AD8003F9906 /* UserProfile.swift */,
 				F68D5CC824A1454100076194 /* Chalkduster.ttf */,
 				F68D5CC124A1454000076194 /* ColorEntry.swift */,
 				F68D5CC324A1454100076194 /* ColorPicker.swift */,
@@ -238,6 +241,7 @@
 				F68D5CCC24A1454100076194 /* ColorsProvider.swift in Sources */,
 				F6EF14D6249A700E00F6D684 /* ContentView.swift in Sources */,
 				F68D5CCD24A1454100076194 /* GameView.swift in Sources */,
+				F615BA5224A65AD8003F9906 /* UserProfile.swift in Sources */,
 				F615BA5024A522D4003F9906 /* GameModel.swift in Sources */,
 				F68D5CCA24A1454100076194 /* DrawingPad.swift in Sources */,
 				F68D5CCB24A1454100076194 /* ColorPicker.swift in Sources */,

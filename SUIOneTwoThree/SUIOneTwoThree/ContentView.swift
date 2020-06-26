@@ -86,14 +86,20 @@ struct ContentView: View {
 
                 }
                     Spacer(minLength: 30)
+            HStack {
             NavigationLink(destination: GameView(gameMode: gameMode.addition, difficulty: difficultyRef)){
                             Text("Go").font(Font.custom("Chalkduster", size: 30))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.bold)
                                 .buttonStyle(MyButtonStyle())
-            }.navigationBarHidden(true)
-                    Spacer(minLength: 60)
-                    }
+            }.navigationBarHidden(true).padding(.trailing, 30)
+            NavigationLink(
+                destination: UserProfile(),
+                label: {
+                    Image(systemName: "person.crop.circle.fill").foregroundColor(.white)
+                })
+            }.padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+        }
             }
         }
     }
