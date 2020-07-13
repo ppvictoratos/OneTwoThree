@@ -14,14 +14,21 @@ struct GameMode: Equatable , Identifiable{
     var difficulty = 1
 }
 
+enum GameModeAction {
+    case operatorChanged(String)
+    case difficultyChanged(Int)
+}
+
+struct GameModeEnvironment { }
+
+
 struct AppState: Equatable {
     var settings: GameMode
 }
 
 enum AppAction {
-    case operatorChanged(operatorText: String)
-    case difficultyChanged(difficulty: Int)
-    
+    case modeOperatorChanged(operatorText: String)
+    case modeDifficultyChanged(difficulty: Int)
 }
 
 struct AppEnvironment {
@@ -31,16 +38,15 @@ struct AppEnvironment {
 let appReducer = Reducer<AppState, AppAction, AppEnvironment> {
     state, action, environment in
     switch action {
-    case .operatorChanged(operatorText: let operatorText):
+    case .modeOperatorChanged(operatorText: let operatorText):
         state.settings.mathOperator = operatorText
         return .none
-    case .difficultyChanged(difficulty: let difficulty):
+    case .modeDifficultyChanged(difficulty: let difficulty):
         state.settings.difficulty = difficulty
         return .none
     }
 }.debug()
 
-//each view needs a store
 
 struct ContentView: View {
     let store: Store<AppState, AppAction>
@@ -55,24 +61,24 @@ struct ContentView: View {
                         VStack {
                             HStack {
                                 Button(action: {
-                                    viewStore.send(.operatorChanged(operatorText: "Add"))
+                                    viewStore.send(.modeOperatorChanged(operatorText: "Add"))
                                 }) {
                                     Text("+").font(.title).accentColor(.black)
                                 }
                                 Button(action: {
-                                    viewStore.send(.operatorChanged(operatorText: "Sub"))
+                                    viewStore.send(.modeOperatorChanged(operatorText: "Sub"))
                                 }) {
                                     Text("-").font(.title).accentColor(.black)
                                 }
                             }
                             HStack {
                                 Button(action: {
-                                    viewStore.send(.operatorChanged(operatorText: "Mul"))
+                                    viewStore.send(.modeOperatorChanged(operatorText: "Mul"))
                                 }) {
                                     Text("×").font(.title).accentColor(.black)
                                 }
                                 Button(action: {
-                                    viewStore.send(.operatorChanged(operatorText: "Div"))
+                                    viewStore.send(.modeOperatorChanged(operatorText: "Div"))
                                 }) {
                                     Text("÷").font(.title).accentColor(.black)
                                 }
