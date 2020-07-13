@@ -38,9 +38,10 @@ struct ContentView: View {
                     HStack{
                         Spacer()
                         Button(action: {self.gameModeRef = gameMode.addition}){
-                            Text("+").font(Font.custom("Chalkduster", size: 80))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.bold)
+                            //image
+                            Image("+")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
                         }.buttonStyle(MyButtonStyle())
 
                         Spacer()
