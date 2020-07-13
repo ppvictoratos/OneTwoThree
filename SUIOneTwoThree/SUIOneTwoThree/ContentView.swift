@@ -88,7 +88,7 @@ struct ContentView: View {
                 }
                     Spacer(minLength: 30)
             HStack {
-            NavigationLink(destination: GameView(gameMode: gameMode.addition, difficulty: difficultyRef)){
+            NavigationLink(destination: GameView(gameMode: gameModeRef, difficulty: difficultyRef)){
                             Text("Go").font(Font.custom("Chalkduster", size: 30))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.bold)
